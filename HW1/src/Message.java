@@ -66,6 +66,10 @@ public abstract class Message {
 		return false;
 		
 	}
-	
-	
+	public void markRead() {
+		this.isRead=true;
+		
+		
+	}
+	public abstract String generatePreview();
 }
