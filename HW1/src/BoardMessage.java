@@ -24,12 +24,12 @@ public class BoardMessage extends Message {
 		
 		super(sender, content, sendDate, isRead);
 		if(boardName == null || boardName.isBlank()) {
-			throw new IllegalArgumentException("Board name cannot be empty");
+			throw new IllegalArgumentException("Board name cannot be empty.");
 			
 		}
 		
 		if(priority==null) {
-			throw new IllegalArgumentException("Priority cannot be empty");
+			throw new IllegalArgumentException("Priority cannot be empty.");
 		}
 		this.boardName=boardName;
 		this.priority = priority;
@@ -45,7 +45,7 @@ public class BoardMessage extends Message {
 
 	public void setBoardName(String boardName) {
 		if(boardName == null || boardName.isBlank()) {
-			throw new IllegalArgumentException("Board name cannot be empty");
+			throw new IllegalArgumentException("Board name cannot be empty.");
 			
 		}
 		this.boardName = boardName;
@@ -57,7 +57,7 @@ public class BoardMessage extends Message {
 
 	public void setPriority(Priority priority) {
 		if(priority==null) {
-			throw new IllegalArgumentException("Priority cannot be empty");
+			throw new IllegalArgumentException("Priority cannot be empty.");
 		}
 		this.priority = priority;
 	}
